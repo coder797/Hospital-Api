@@ -52,6 +52,7 @@ module.exports.login = async (req, res) => {
         token: jwt.sign(doctorExist.toJSON(), "omicron", {
           expiresIn: "400000000",
         }),
+        id:doctorExist.id
       },
     });
   } catch (err) {

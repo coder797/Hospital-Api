@@ -45,8 +45,8 @@ module.exports.createReport = async (req, res) => {
       let reportData = {
         doctor: req.body.doctor,
         patient: req.params.id,
-        status: req.body.status,
-        date: req.body.date,
+        status: req.body.status
+        
       };
 
       // create the report and push in patient's reports

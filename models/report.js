@@ -18,7 +18,7 @@ const reportSchema = new mongoose.Schema(
 
     date: {
       type: Date,
-      required: true,
+      default:new Date()
     },
   },
   {
